@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function myFunction() {
+              document.getElementById("demo1").innerHTML = "Paragraph changed.";
+            }
+        </script>
+    </head>
+<body>
+    <h2>Change text on click on the button</h2>
+    <p id="demo">JavaScript can change HTML content.</p>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+    <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Change text size</button>
+
+    <h2>using script tag</h2>
+    <p id="demo1">A Paragraph.</p>
+    <button type="button" onclick="myFunction()">Try it</button>
+
+    <h2>Write Html element</h2>
+    <p id="htmldemo"></p>
+    <button type="button" onclick='document.getElementById("htmldemo").innerHTML ="Add Text"'>Try it</button>
+
+    <h2>Write Html output</h2>    
+    <script>document.write(50-20)</script>
+
+    <h2>alert box</h2>    
+    <button type="button" onclick="window.alert(10+12)">Create alert box</button>
+
+    <h2>console date</h2>  
+    <button type="button" onclick="console.log(10+12)">Create console log</button>    
+
+    <h2>Print the current page.</h2>
+    <button type="button" onclick="print()">Print page</button>  
+
+    <h2>JavaScript Statements</h2>
+    <p id="statement"></p>
+
+    <script>
+        let x, y, z;  // Statement 1
+        x = 10;        // Statement 2
+        y = 5;        // Statement 3
+        z = x / y;    // Statement 4
+
+        document.getElementById("statement").innerHTML =
+        "The value of z is " + z + ".";  
+    </script>
+
+    <h2>var</h2>
+    <script>
+        var a = 10;
+        var a = 5;
+        document.write(a);
+    </script>
+    <h2>let</h2>
+    <script>
+        let b = 10;
+        b = 5;
+        document.write(a);
+    </script>
+    <h2>const</h2>
+    <script>
+        const c = 10;        
+        document.write(c);
+    </script>
+
+    <h2 id="def" onclick="del()">hello world</h2>
+    <h2 id="new" style="display: none;">add newname</h2>
+    <h2 id="datefor"></h2>
+    <script>
+        function del(){
+            document.getElementById("def").style.display = "none";
+            document.getElementById("new").style.display = "block";
+        }
+        // date
+        function dt(){
+            const date = new Date();
+            return date.toString();
+        }
+        document.getElementById("datefor").innerHTML = dt();
+    </script>
+    
+    
+</body>
+</html>

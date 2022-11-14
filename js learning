@@ -1,0 +1,311 @@
+What is js?
+- js is multiple programing language
+- using js we can update and change both HTML and css
+
+JavaScript Output:-
+- Writing into an HTML element, using innerHTML. >> 'document.getElementById("htmldemo").innerHTML ="Add Text"'
+- Writing into the HTML output using document.write(). >> document.write(50-20)
+- Writing into an alert box, using window.alert(). >> window.alert(10+12)
+        >> You can skip the window keyword.
+        - window object is the global scope object. 
+        - This means that variables, properties, and methods by default belong to the window object.
+- Writing into the browser console, using console.log() >> console.log(5 + 6)
+JavaScript Print - window.print() >> print current page
+
+JavaScript Statements:-
+- JavaScript statements are composed of: Values, Operators, Expressions, Keywords, and Comments.
+- This statement tells the browser to write "Hello Dolly." inside an HTML element with id="demo":
+
+1) Semicolons ; Semicolons separate JavaScript statements.
+2) JavaScript White Space
+- JavaScript ignores multiple spaces. You can add white space to your script to make it more readable.
+- A good practice is to put spaces around operators
+
+JavaScript Keywords:-
+- var	: Declares a variable
+- let	: Declares a block variable
+- const	: Declares a block constant
+- if	: Marks a block of statements to be executed on a condition
+- switch	: Marks a block of statements to be executed in different cases
+- for :	Marks a block of statements to be executed in a loop
+- function: Declares a function
+- return: Exits a function
+- try	: Implements error handling to a block of statements
+
+
+JavaScript Values :- The JavaScript syntax defines two types of values:
+    1) Fixed values >> Fixed values are called Literals.
+    2) Variable values >> Variable values are called Variables.
+
+JavaScript Variables:- variables are used to store data values.
+JavaScript Operators:- JavaScript uses arithmetic operators ( + - * / ) to compute values
+JavaScript Expressions :-
+- An expression is a combination of values, variables, and operators, which computes to a value.
+- The computation is called an evaluation.
+
+JavaScript Variables:-
+4 Ways to Declare a JavaScript Variable:
+- Using var
+- Using let
+- Using const :- If you want a general rule: always declare variables with const
+- Using nothing :- If you think the value of the variable can change, use let.
+
+What are Variables? :- use for storing data
+
+Assignment Operator :
+In JavaScript, the equal sign (=) is an "assignment" operator, not an "equal to" operator.
+
+The "equal to" operator is written like == in JavaScript.
+
+Types of JavaScript Operators :-
+1)Arithmetic Operators 
+    +	Addition
+    -	Subtraction
+    *	Multiplication
+    **	Exponentiation (ES2016)
+    /	Division
+    %	Modulus (Division Remainder)
+    ++	Increment
+    -- 	Decrement
+2)Assignment Operators 
+    =	x = y	x = y
+    +=	x += y	x = x + y
+    -=	x -= y	x = x - y
+    *=	x *= y	x = x * y
+    /=	x /= y	x = x / y
+    %=	x %= y	x = x % y
+    **=	x **= y	x = x ** y
+
+3)Comparison Operators
+    ==	equal to
+    ===	equal value and equal type
+    !=	not equal
+    !==	not equal value or not equal type
+    >	greater than
+    <	less than
+    >=	greater than or equal to
+    <=	less than or equal to
+    ?	ternary operator
+4)Logical Operators
+    &&	logical and
+    ||	logical or
+    !	logical not
+5)Conditional Operators
+6)Type Operators
+    typeof:	Returns the type of a variable
+    instanceof:	Returns true if an object is an instance of an object type
+
+JavaScript Strings:- JavaScript strings are for storing and manipulating text.
+String Length: text.length
+Escape Character: 
+    Code	Result	Description
+    \'	'	Single quote
+    \"	"	Double quote
+    \\	\	Backslash
+    let text = "We are the so-called \"Vikings\" from the north.";
+    let text= 'It\'s alright.';
+    let text = "The character \\ is called backslash.";
+
+    Code	Result
+    \b	Backspace
+    \f	Form Feed
+    \n	New Line
+    \r	Carriage Return
+    \t	Horizontal Tabulator
+    \v	Vertical Tabulator
+
+JavaScript Strings as Objects: let y = new String("John");
+When using the == operator, x and y are equal:
+When using the === operator, x and y are not equal:
+Comparing two JavaScript objects always returns false.
+
+JavaScript String Methods:-
+1) JavaScript String Length: length >> text.length
+Extracting String Parts:-
+2)slice(start, end):
+    let text = "Apple, Banana, Kiwi";
+    let part = text.slice(7, 13);
+
+    If you omit the second parameter, the method will slice out the rest of the string:
+    let text = "Apple, Banana, Kiwi";
+    let part = text.slice(7);
+
+    lf a parameter is negative, the position is counted from the end of the string:
+    let text = "Apple, Banana, Kiwi";
+    let part = text.slice(-12);
+
+    This example slices out a portion of a string from position -12 to position -6:
+    let text = "Apple, Banana, Kiwi";
+    let part = text.slice(-12, -6);
+
+3)substring(start, end)
+    substring() is similar to slice().
+    The difference is that start and end values less than 0 are treated as 0 in substring().
+    let str = "Apple, Banana, Kiwi";
+    let part = str.substring(7, 13);
+
+4)substr(start, length)
+    substr() is similar to slice().
+    The difference is that the second parameter specifies the length of the extracted part.
+    let str = "Apple, Banana, Kiwi";
+    let part = str.substr(7, 6);
+
+5) Replacing String Content:
+    The replace() method replaces a specified value with another value in a string:
+    let text = "Please visit Microsoft!";
+    let newText = text.replace("Microsoft", "W3Schools");
+
+6) JavaScript String ReplaceAll():
+    replaceAll()
+    text = text.replaceAll("Cats","Dogs");
+    text = text.replaceAll("cats","dogs");
+
+7) Converting to Upper and Lower Case:
+    toUpperCase() , toLowerCase()
+    let text1 = "Hello World!";
+    let text2 = text1.toUpperCase();
+
+    let text1 = "Hello World!";       // String
+    let text2 = text1.toLowerCase(); 
+
+8) JavaScript String concat():
+    The concat() method can be used instead of the plus operator. These two lines do the same:
+
+    Example
+    text = "Hello" + " " + "World!";
+    text = "Hello".concat(" ", "World!");
+
+9) JavaScript String trim():
+    The trim() method removes whitespace from both sides of a string:
+
+10) JavaScript String trimStart()
+    The trimStart() method works like trim(), but removes whitespace only from the start of a string.
+
+11) JavaScript String trimEnd()
+    The trimEnd() method works like trim(), but removes whitespace only from the end of a string.
+
+12) JavaScript String Padding
+    1) padStart() 
+        let text = "5";
+        text = text.padStart(4,"0"); ans: 0005
+    2) padEnd() 
+        let text = "5";
+        text = text.padEnd(4,"0"); ans: 5000
+
+13) Extracting String Characters
+    1) charAt(): The charAt() method returns the character at a specified index (position) in a string:
+        let text = "HELLO WORLD";
+        let char = text.charAt(0); ans: H
+    2) charCodeAt():
+        The charCodeAt() method returns the unicode of the character at a specified index in a string:
+    3) Property Access:
+
+14) JavaScript String split():
+    string can be converted to an array with the split() method:
+
+* JavaScript Search Methods:-
+    1) String indexOf() : returns the index of (position of) the first occurrence of a string in a string
+        let str = "Please locate where 'locate' occurs!";
+        str.indexOf("locate"); ans : 7
+    2) String lastIndexOf() : method returns the index of the last occurrence of a specified text in a string:
+        let text = "Please locate where 'locate' occurs!";
+        text.lastIndexOf("locate"); ans : 21
+    3) String search()
+    4) String match()
+    5) String matchAll()
+    6) String includes()
+    7) String startsWith()
+    8) String endsWith()
+
+    
+JavaScript Array Methods :
+1) toString():convert array in to string
+2) join(): add seprators ex. : text.join(" / ")
+3) pop(): remove items out of an array at last
+4) push(): add items into an array at last
+5) shift() : same as push but differnce is shift element as first insted of last
+6) unshift(): add new array at first
+7) concat(): mearge two array ex.:
+    var x = ["hello","world"];
+    var y = ["test","test2"];
+    var z = y.concat(x);
+8) splice(): method can be used to add new items to an array:
+9) slice(): method slices out a piece of an array into a new array.
+10) sort() : set array as alphabatically
+11) reverse(): set array as revert order
+12) Math.max.apply: find highest number of array
+13) Math.min.apply: find lowest number of array
+
+1) forEach():  method calls a function (a callback function) once for each array element.
+    function takes 3 arguments:
+        The item value
+        The item index
+        The array itself
+    >> it's use for when we do some oprations
+2) map(): array return
+    The map() method creates a new array by performing a function on each array element.
+    The map() method does not execute the function for array elements without values.
+    The map() method does not change the original array.
+    >> create new array  >> it's use for when we create new array
+3) filter(): creates a new array with array elements that pass a test >> array return 
+4) Array.from(): convert string in to array
+5) reduce(): reduce is a array of single value 
+    >> value return 
+    >> add 1 and 2 number, now result of 1 and 2 add with 3 and so on
+6) entries() : return array key and value
+7) Keys(): return array key
+
+* Date object:
+use with new Date().
+use this with 9 ways:
+1) new Date() : creates a date object with the current date and time:
+    >> ans Thu Nov 10 2022 14:43:57 GMT+0530 (India Standard Time)
+2) new Date(date string) : creates a date object from a date string:
+    >> new Date("October 13, 2014 11:13:00"); ans: Mon Oct 13 2014 11:13:00 GMT+0530 (India Standard Time)
+3) new Date(year,month) creates a date object with a specified date and time
+new Date(year,month,day)
+new Date(year,month,day,hours)
+new Date(year,month,day,hours,minutes)
+new Date(year,month,day,hours,minutes,seconds)
+new Date(year,month,day,hours,minutes,seconds,ms)
+
+new Date(milliseconds)
+
+
+error: 
+1) try() and catch()
+    try () block of code to try
+    catch() block of code to handle error
+2) throw statement allows you to create a custom error
+3) finally() execute code, after try and catch, regardless of the result:
+
+Error Object Properties: 
+1) Name
+2) message
+
+Error Name Values
+    EvalError-	An error has occurred in the eval() function
+    RangeError-	A number "out of range" has occurred
+    ReferenceError-	An illegal reference has occurred
+    SyntaxError-	A syntax error has occurred
+    TypeError-	A type error has occurred
+    URIError-	An error in encodeURI() has occurred
+
+
+JavaScript Callbacks:- A callback is a function passed as an argument to another function.
+Function Sequence:
+    JavaScript functions are executed in the sequence they are called. Not in the sequence they are defined.
+
+JavaScript Promise Object: A JavaScript Promise object contains both the producing code and calls to the consuming code
+let myPromise = new Promise(function(myResolve, myReject) {
+// "Producing Code" (May take some time)
+
+  myResolve(); // when successful
+  myReject();  // when error
+});
+
+// "Consuming Code" (Must wait for a fulfilled Promise)
+myPromise.then(
+  function(value) { /* code if successful */ },
+  function(error) { /* code if some error */ }
+);
