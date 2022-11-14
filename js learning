@@ -322,3 +322,11 @@ JavaScript Promise Examples:
 JavaScript Async: 
     async makes a function return a Promise
     await makes a function wait for a Promise
+
+Function Hoisting:
+myFunction(5);
+function myFunction(y) {
+  return y * y;
+}
+
+arguments.length: property returns the number of arguments 

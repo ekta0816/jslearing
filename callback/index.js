@@ -65,4 +65,30 @@ async function myDisplay() {
   }
   
   myDisplayw();
-  
+
+  async function weather(){
+    let dw = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("25 Deg")
+        }, 2000);
+    })
+
+    let bw = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("20 Deg")
+        }, 5000);
+    })
+
+    console.log("Featch Delhi weather please wait...")
+    let delhiw = await dw
+    console.log("delhi weather is: " + delhiw);
+    console.log("Featch Banglore weather please wait...")
+    let bangw = await bw
+    console.log("Banglore weather is: " + bangw);
+
+  }
+   let w = weather()
+   w.then((value) => {
+    console.log(value);
+   })
+
