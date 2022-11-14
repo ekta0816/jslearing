@@ -309,3 +309,16 @@ myPromise.then(
   function(value) { /* code if successful */ },
   function(error) { /* code if some error */ }
 );
+
+Promise Object Properties:
+    Pending : Promise object is "pending" (working), the result is undefined.
+    Fulfilled : Promise object is "fulfilled", the result is a value.
+    Rejected : Promise object is "rejected", the result is an error object.
+
+JavaScript Promise Examples: 
+1) Waiting for a Timeout
+2) Waiting for a file
+
+JavaScript Async: 
+    async makes a function return a Promise
+    await makes a function wait for a Promise

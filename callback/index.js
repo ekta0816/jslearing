@@ -48,3 +48,21 @@ function myFunction2() {
   d.getSeconds();
 }
 
+async function myDisplay() {
+    let myPromise = new Promise(function(resolve) {
+      resolve("js demo !!");
+    });
+    document.getElementById("demo5").innerHTML = await myPromise;
+  }
+  
+  myDisplay();
+
+  async function myDisplayw() {
+    let myPromise = new Promise(function(resolve) {
+      setTimeout(function() {resolve("js demo with timeout");}, 3000);
+    });
+    document.getElementById("demo6").innerHTML = await myPromise;
+  }
+  
+  myDisplayw();
+  
