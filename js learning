@@ -330,3 +330,11 @@ function myFunction(y) {
 }
 
 arguments.length: property returns the number of arguments 
+
+Function: 
+JavaScript call() Method: use for predefine js Method
+
+The call() method takes arguments separately.
+The apply() method takes arguments as an array.
+
+Simulate a Max Method on Arrays: Math.max(1,5,9)
